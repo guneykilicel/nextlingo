@@ -1,0 +1,17 @@
+{
+    "IndexPage": {
+      "title": "next-intl örneği",
+      "description": "Next.js Uluslararasılaştırma (i18n) örneğine hoş geldiniz! Bu demo, App Router'ın gücünü ve next-intl kullanarak çok dilli içeriği sorunsuz bir şekilde nasıl yönetebileceğinizi gösterir."
+    },
+    "NotFoundPage": {
+      "title": "Sayfa Bulunamadı",
+      "description": "Üzgünüz! Görünüşe göre var olmayan bir sayfaya ulaştınız. Merak etmeyin, uygulamanın diğer bölümlerinde uluslararasılaştırma sihrimiz hala çalışıyor. Keşfetmek için geri dönebilirsiniz!"
+    },
+    "Navigation": {
+      "home": "Ana Sayfa"
+    },
+    "Footer": {
+      "copyright": "© 2024 Uygulamanız. Tüm hakları saklıdır."
+    }
+  }
+  
