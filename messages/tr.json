@@ -12,6 +12,10 @@
     },
     "Footer": {
       "copyright": "© 2024 Uygulamanız. Tüm hakları saklıdır."
-    }
+    },
+    "LocaleSwitcher": {
+    "label": "Dili değiştir",
+    "locale": "{locale, select, tr {tr Turkçe} en {🇺🇸 English} other {Bilinmiyor}}"
+  }
   }
   

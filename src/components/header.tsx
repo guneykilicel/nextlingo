@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import Link from "next/link"
-import LocalSwitcher from "./local-switcher";
+import LocalSwitcher from "./LocaleSwitcher";
 
 export const Header = () => {
     const t = useTranslations("Navigation");

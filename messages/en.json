@@ -26,5 +26,9 @@
     },
     "Footer": {
       "copyright": "© 2024 Your App. All rights reserved."
-    }
+    },
+    "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, tr {tr Türkçe} en {🇺🇸 English} other {Unknown}}"
+  }
   }

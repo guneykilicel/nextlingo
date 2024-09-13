@@ -1,25 +1,26 @@
-import { useTranslations } from "next-intl";
+import {useTranslations} from 'next-intl';
+import {unstable_setRequestLocale} from 'next-intl/server';
+import PageLayout from '@/components/PageLayout';
 
-export default function Home() {
-  const t = useTranslations("IndexPage");
+type Props = {
+  params: {locale: string};
+};
 
-  // Ürün anahtarlarını tanımlayın
-  const productKeys = ["product1", "product2", "product3"];
+export default function IndexPage({params: {locale}}: Props) {
+  // Enable static rendering
+  unstable_setRequestLocale(locale);
+
+  const t = useTranslations('IndexPage');
 
   return (
-    <div>
-      <h1 className="text-4xl mb-4 font-semibold">{t("title")}</h1>
-      <p>{t("description")}</p>
-
-      {/* Ürünleri döngüye sokarak yazdır */}
-      <div className="mt-8">
-        {productKeys.map((productKey) => (
-          <div key={productKey} className="mb-4">
-            <h2 className="text-2xl font-bold">{t(`products.${productKey}.name`)}</h2>
-            <p>{t(`products.${productKey}.description`)}</p>
-          </div>
-        ))}
-      </div>
-    </div>
+    <PageLayout title={t('title')}>
+      <p className="max-w-[590px]">
+        {t.rich('description', {
+          code: (chunks) => (
+            <code className="font-mono text-white">{chunks}</code>
+          )
+        })}
+      </p>
+    </PageLayout>
   );
 }
